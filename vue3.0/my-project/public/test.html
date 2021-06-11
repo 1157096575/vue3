@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,viewport-fit=cover">
+        <script type="text/javascript" src="vconsole.min.js"></script>
+        <script type="text/javascript" src="mobile-detect.js"></script>
+        <script type="text/javascript">
+            var vConsole = new VConsole();
+            console.log(11,window.navigator.userAgent);
+            console.log(12,window.navigator.appVersion );
+            console.log(13,window.navigator.appName);
+            console.log(14,window.navigator.language);
+            console.log(15,window.navigator.platform );
+          var md = new MobileDetect(window.navigator.userAgent);
+          console.log(1, md)
+          console.log(2, md.mobile() );          // 'Sony'  
+          console.log(3, md.phone() );           // 'Sony'  
+          console.log(4, md.tablet() );          // null  
+          console.log(5, md.userAgent() );  
+          console.log(6, md.os() );              // 'AndroidOS'  
+          console.log(7, md.is('iPhone') );      // false  
+          console.log(8, md.is('bot') );         // false  
+          console.log(9, md.version('Webkit') );         // 534.3  
+          console.log(10, md.versionStr('Build') );       // '4.1.A.0.562'  
+          console.log(11, md.match('playstation|xbox') ); // false 
+          console.log(12, md.mobileGrade() );  
+          console.log(13, md.versionStr('Chrome') );       
+          console.log(14, md.versionStr('Safari') ); 
+          console.log(15, md.version("Chrome") );     
+          console.log(16, md.version("Safari") ); 
+          console.log(17, md.version("Webkit") );    
+          console.log(18, md.versionStr("Windows NT") );   
+          console.log(19, md.version("Windows NT") );   
+
+
+
+
+
+        </script>
+    </head>
+    <body>
+    1
+    </body>
+</html>
